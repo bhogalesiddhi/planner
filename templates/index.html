@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Trip Planner</title>
+</head>
+<body>
+  <h1>Plan Your Amazing Trip!</h1>
+  <form id="trip-form" method="GET" action="/find_pois">
+    <div class="location-input">
+      <label for="city">City or Landmark:</label>
+      <input type="text" id="city" name="city" placeholder="Enter city or landmark name">
+    </div>
+    <div class="date-input">
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" name="start_date">
+    </div>
+    <div class="date-input">
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" name="end_date">
+    </div>
+    <div class="interests-selection">
+      <label for="interests">Select Your Interests:</label>
+      <br>
+      <input type="checkbox" id="museums" name="interests" value="museums">
+      <label for="museums">Museums</label>
+      <br>
+      <input type="checkbox" id="parks" name="interests" value="parks">
+      <label for="parks">Parks</label>
+      <br>
+      <input type="checkbox" id="restaurants" name="interests" value="restaurants">
+      <label for="restaurants">Restaurants</label>
+      <br>
+    </div>
+    <button type="submit">Find Points of Interest</button>
+  </form>
+  <div id="results"></div>
+</body>
+</html>

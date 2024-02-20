@@ -1,0 +1,21 @@
+/* Customize styles as needed */
+body {
+    font-family: sans-serif;
+  }
+  
+  #trip-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .location-input, .interests-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
